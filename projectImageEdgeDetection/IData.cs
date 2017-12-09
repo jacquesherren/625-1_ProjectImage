@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace projectImageEdgeDetection
 {
-    public interface IView
+     public interface IData
     {
-        Bitmap Laplacian3x3Filter(Bitmap source);
-        Bitmap otherMethodFilter(Bitmap source);
-        Bitmap LoadImage();
+        Bitmap LoadImageFromDisk();
+
+        Boolean SaveImageToDisk();
     }
 }

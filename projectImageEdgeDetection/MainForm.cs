@@ -35,5 +35,11 @@ namespace projectImageEdgeDetection
             Bitmap result;
             result = view.otherMethodFilter(source);
         }
+
+        private void buttonLoadImage_Click(object sender, EventArgs e)
+        {
+            Bitmap result = view.LoadImage();
+            pictureBoxImageSource.Image = (Image)result;
+        }
     }
 }

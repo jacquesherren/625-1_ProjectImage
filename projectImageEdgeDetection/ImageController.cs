@@ -12,12 +12,19 @@ namespace projectImageEdgeDetection
     class ImageController
     {
         private readonly IView iView;
+        private  IData iData;
         private Bitmap bitmapSource;
         private Bitmap bitmapResult;
 
         public ImageController(IView iView)
         {
             this.iView = iView;
+        }
+
+        public Bitmap LoadImage()
+        {
+            this.iData = new DataProxy();
+            return iData.LoadImageFromDisk();
         }
 
         public Bitmap Laplacian3x3(Bitmap source)
