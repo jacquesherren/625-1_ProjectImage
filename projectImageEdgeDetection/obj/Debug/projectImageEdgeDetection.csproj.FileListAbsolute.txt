@@ -1,0 +1,10 @@
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe.config
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.pdb
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csprojResolveAssemblyReference.cache
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.MainForm.resources
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.Properties.Resources.resources
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.GenerateResource.Cache
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.exe
+C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.pdb
