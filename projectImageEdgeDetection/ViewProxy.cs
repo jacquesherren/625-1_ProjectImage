@@ -15,6 +15,12 @@ namespace projectImageEdgeDetection
             return imageController.Laplacian3x3(source);
         }
 
+        public Bitmap LoadImage()
+        {
+            ImageController imageController = new ImageController(this);
+            return imageController.LoadImage();
+        }
+
         public Bitmap otherMethodFilter(Bitmap source)
         {
             throw new NotImplementedException();

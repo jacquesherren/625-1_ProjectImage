@@ -32,6 +32,8 @@
             this.pictureBoxNewImage = new System.Windows.Forms.PictureBox();
             this.buttonLapiacian = new System.Windows.Forms.Button();
             this.buttonOtherMethod = new System.Windows.Forms.Button();
+            this.buttonLoadImage = new System.Windows.Forms.Button();
+            this.buttonSaveImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNewImage)).BeginInit();
             this.SuspendLayout();
@@ -74,11 +76,32 @@
             this.buttonOtherMethod.UseVisualStyleBackColor = true;
             this.buttonOtherMethod.Click += new System.EventHandler(this.buttonOtherMethod_Click);
             // 
+            // buttonLoadImage
+            // 
+            this.buttonLoadImage.Location = new System.Drawing.Point(530, 261);
+            this.buttonLoadImage.Name = "buttonLoadImage";
+            this.buttonLoadImage.Size = new System.Drawing.Size(75, 43);
+            this.buttonLoadImage.TabIndex = 4;
+            this.buttonLoadImage.Text = "Load Image";
+            this.buttonLoadImage.UseVisualStyleBackColor = true;
+            this.buttonLoadImage.Click += new System.EventHandler(this.buttonLoadImage_Click);
+            // 
+            // buttonSaveImage
+            // 
+            this.buttonSaveImage.Location = new System.Drawing.Point(530, 310);
+            this.buttonSaveImage.Name = "buttonSaveImage";
+            this.buttonSaveImage.Size = new System.Drawing.Size(75, 43);
+            this.buttonSaveImage.TabIndex = 5;
+            this.buttonSaveImage.Text = "Save Image";
+            this.buttonSaveImage.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 362);
+            this.ClientSize = new System.Drawing.Size(1312, 553);
+            this.Controls.Add(this.buttonSaveImage);
+            this.Controls.Add(this.buttonLoadImage);
             this.Controls.Add(this.buttonOtherMethod);
             this.Controls.Add(this.buttonLapiacian);
             this.Controls.Add(this.pictureBoxNewImage);
@@ -97,6 +120,8 @@
         private System.Windows.Forms.PictureBox pictureBoxNewImage;
         private System.Windows.Forms.Button buttonOtherMethod;
         private System.Windows.Forms.Button buttonLapiacian;
+        private System.Windows.Forms.Button buttonLoadImage;
+        private System.Windows.Forms.Button buttonSaveImage;
     }
 }
 

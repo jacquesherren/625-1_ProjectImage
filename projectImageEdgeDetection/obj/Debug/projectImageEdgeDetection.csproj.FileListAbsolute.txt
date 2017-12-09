@@ -8,3 +8,13 @@ C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetectio
 C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.CoreCompileInputs.cache
 C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.exe
 C:\Users\Jacques\source\repos\projectImageEdgeDetection\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.pdb
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe.config
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.pdb
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csprojResolveAssemblyReference.cache
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.MainForm.resources
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.Properties.Resources.resources
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.GenerateResource.Cache
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.exe
+C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.pdb
