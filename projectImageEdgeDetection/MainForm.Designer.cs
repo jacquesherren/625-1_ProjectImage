@@ -30,10 +30,10 @@
         {
             this.pictureBoxImageSource = new System.Windows.Forms.PictureBox();
             this.pictureBoxNewImage = new System.Windows.Forms.PictureBox();
-            this.buttonLapiacian = new System.Windows.Forms.Button();
-            this.buttonOtherMethod = new System.Windows.Forms.Button();
-            this.buttonLoadImage = new System.Windows.Forms.Button();
-            this.buttonSaveImage = new System.Windows.Forms.Button();
+            this.ButtonLaplacian = new System.Windows.Forms.Button();
+            this.ButtonOtherMethod = new System.Windows.Forms.Button();
+            this.ButtonLoadImage = new System.Windows.Forms.Button();
+            this.ButtonSaveImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNewImage)).BeginInit();
             this.SuspendLayout();
@@ -56,54 +56,54 @@
             this.pictureBoxNewImage.TabIndex = 1;
             this.pictureBoxNewImage.TabStop = false;
             // 
-            // buttonLapiacian
+            // ButtonLaplacian
             // 
-            this.buttonLapiacian.Location = new System.Drawing.Point(530, 12);
-            this.buttonLapiacian.Name = "buttonLapiacian";
-            this.buttonLapiacian.Size = new System.Drawing.Size(75, 35);
-            this.buttonLapiacian.TabIndex = 2;
-            this.buttonLapiacian.Text = "Lapiacian 3x3";
-            this.buttonLapiacian.UseVisualStyleBackColor = true;
-            this.buttonLapiacian.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonLaplacian.Location = new System.Drawing.Point(530, 12);
+            this.ButtonLaplacian.Name = "ButtonLaplacian";
+            this.ButtonLaplacian.Size = new System.Drawing.Size(75, 35);
+            this.ButtonLaplacian.TabIndex = 2;
+            this.ButtonLaplacian.Text = "Lapiacian 3x3";
+            this.ButtonLaplacian.UseVisualStyleBackColor = true;
+            this.ButtonLaplacian.Click += new System.EventHandler(this.ButtonLaplacian_Click);
             // 
-            // buttonOtherMethod
+            // ButtonOtherMethod
             // 
-            this.buttonOtherMethod.Location = new System.Drawing.Point(530, 53);
-            this.buttonOtherMethod.Name = "buttonOtherMethod";
-            this.buttonOtherMethod.Size = new System.Drawing.Size(75, 38);
-            this.buttonOtherMethod.TabIndex = 3;
-            this.buttonOtherMethod.Text = "otherMethod";
-            this.buttonOtherMethod.UseVisualStyleBackColor = true;
-            this.buttonOtherMethod.Click += new System.EventHandler(this.buttonOtherMethod_Click);
+            this.ButtonOtherMethod.Location = new System.Drawing.Point(530, 53);
+            this.ButtonOtherMethod.Name = "ButtonOtherMethod";
+            this.ButtonOtherMethod.Size = new System.Drawing.Size(75, 38);
+            this.ButtonOtherMethod.TabIndex = 3;
+            this.ButtonOtherMethod.Text = "otherMethod";
+            this.ButtonOtherMethod.UseVisualStyleBackColor = true;
+            this.ButtonOtherMethod.Click += new System.EventHandler(this.ButtonOtherMethod_Click);
             // 
-            // buttonLoadImage
+            // ButtonLoadImage
             // 
-            this.buttonLoadImage.Location = new System.Drawing.Point(530, 261);
-            this.buttonLoadImage.Name = "buttonLoadImage";
-            this.buttonLoadImage.Size = new System.Drawing.Size(75, 43);
-            this.buttonLoadImage.TabIndex = 4;
-            this.buttonLoadImage.Text = "Load Image";
-            this.buttonLoadImage.UseVisualStyleBackColor = true;
-            this.buttonLoadImage.Click += new System.EventHandler(this.buttonLoadImage_Click);
+            this.ButtonLoadImage.Location = new System.Drawing.Point(530, 261);
+            this.ButtonLoadImage.Name = "ButtonLoadImage";
+            this.ButtonLoadImage.Size = new System.Drawing.Size(75, 43);
+            this.ButtonLoadImage.TabIndex = 4;
+            this.ButtonLoadImage.Text = "Load Image";
+            this.ButtonLoadImage.UseVisualStyleBackColor = true;
+            this.ButtonLoadImage.Click += new System.EventHandler(this.ButtonLoadImage_Click);
             // 
-            // buttonSaveImage
+            // ButtonSaveImage
             // 
-            this.buttonSaveImage.Location = new System.Drawing.Point(530, 310);
-            this.buttonSaveImage.Name = "buttonSaveImage";
-            this.buttonSaveImage.Size = new System.Drawing.Size(75, 43);
-            this.buttonSaveImage.TabIndex = 5;
-            this.buttonSaveImage.Text = "Save Image";
-            this.buttonSaveImage.UseVisualStyleBackColor = true;
+            this.ButtonSaveImage.Location = new System.Drawing.Point(530, 310);
+            this.ButtonSaveImage.Name = "ButtonSaveImage";
+            this.ButtonSaveImage.Size = new System.Drawing.Size(75, 43);
+            this.ButtonSaveImage.TabIndex = 5;
+            this.ButtonSaveImage.Text = "Save Image";
+            this.ButtonSaveImage.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1312, 553);
-            this.Controls.Add(this.buttonSaveImage);
-            this.Controls.Add(this.buttonLoadImage);
-            this.Controls.Add(this.buttonOtherMethod);
-            this.Controls.Add(this.buttonLapiacian);
+            this.Controls.Add(this.ButtonSaveImage);
+            this.Controls.Add(this.ButtonLoadImage);
+            this.Controls.Add(this.ButtonOtherMethod);
+            this.Controls.Add(this.ButtonLaplacian);
             this.Controls.Add(this.pictureBoxNewImage);
             this.Controls.Add(this.pictureBoxImageSource);
             this.Name = "MainForm";
@@ -118,10 +118,10 @@
 
         private System.Windows.Forms.PictureBox pictureBoxImageSource;
         private System.Windows.Forms.PictureBox pictureBoxNewImage;
-        private System.Windows.Forms.Button buttonOtherMethod;
-        private System.Windows.Forms.Button buttonLapiacian;
-        private System.Windows.Forms.Button buttonLoadImage;
-        private System.Windows.Forms.Button buttonSaveImage;
+        private System.Windows.Forms.Button ButtonOtherMethod;
+        private System.Windows.Forms.Button ButtonLaplacian;
+        private System.Windows.Forms.Button ButtonLoadImage;
+        private System.Windows.Forms.Button ButtonSaveImage;
     }
 }
 

@@ -23,23 +23,23 @@ namespace projectImageEdgeDetection
             source = (Bitmap)pictureBoxImageSource.Image;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonLaplacian_Click(object sender, EventArgs e)
         {
             Bitmap result;
             result = view.Laplacian3x3Filter(source);
             pictureBoxNewImage.Image = (Image)result;
         }
 
-        private void buttonOtherMethod_Click(object sender, EventArgs e)
+        private void ButtonOtherMethod_Click(object sender, EventArgs e)
         {
             Bitmap result;
             result = view.otherMethodFilter(source);
         }
 
-        private void buttonLoadImage_Click(object sender, EventArgs e)
+        private void ButtonLoadImage_Click(object sender, EventArgs e)
         {
-            Bitmap result = view.LoadImage();
-            pictureBoxImageSource.Image = (Image)result;
+            this.source = view.LoadImage();
+            pictureBoxImageSource.Image = (Image)source;
         }
     }
 }
