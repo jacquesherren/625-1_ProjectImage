@@ -30,7 +30,6 @@ namespace projectImageEdgeDetection
         public Bitmap Laplacian3x3(Bitmap source)
         {
             this.bitmapSource = source;
-
             return Laplacian3x3(); ;
 
         }
