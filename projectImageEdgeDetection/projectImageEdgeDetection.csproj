@@ -49,7 +49,6 @@
     <Compile Include="IData.cs" />
     <Compile Include="MyImage.cs" />
     <Compile Include="ImageData.cs" />
-    <Compile Include="ImageFile.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="ImageController.cs" />
     <Compile Include="ViewProxy.cs" />
