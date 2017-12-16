@@ -21,6 +21,7 @@ namespace projectImageEdgeDetection
         public MainForm()
         {
             InitializeComponent();
+            
         }
 
         private void ButtonLaplacian_Click(object sender, EventArgs e)

@@ -11,11 +11,6 @@ namespace projectImageEdgeDetection
 {
    public static class ImageController
     {
-        //private static readonly IView iView;
-        //private static IData iData;
-        //private MyImage source;
-        //private MyImage result;
-
 
 
         public static MyImage LoadImage()
@@ -26,19 +21,18 @@ namespace projectImageEdgeDetection
 
         public static MyImage Laplacian3x3(MyImage source)
         {
-            //this.source = source;
+
             MyImage res = new MyImage(source.GetBitmap(), false);
 
             res.SetBitmap(ConvolutionFilter(source.GetBitmap(), MatrixLaplacian3x3, 1.0, 0, false));
             res.SetFiltred(true);
 
             return res;
-
         }
 
         public static MyImage SetColorFilter(MyImage source,int max,int min,Color color)
         {
-            //this.source = source;
+
             MyImage res = new MyImage(source.GetBitmap(), false);
 
             res.SetBitmap(SetColorFilter(res.GetBitmap(), max, min, color));

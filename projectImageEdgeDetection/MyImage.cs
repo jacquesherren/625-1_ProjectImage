@@ -11,6 +11,8 @@ namespace projectImageEdgeDetection
     {
         private Bitmap Bitmap { get; set; }
         private Boolean Filtred { get; set; }
+        public double Size { get => Size; set => Size = value; }
+
 
         public MyImage(Bitmap bitmap, Boolean filtred)
         {
