@@ -42,5 +42,15 @@ namespace projectImageEdgeDetection
             this.source = view.LoadImage();
             pictureBoxImageSource.Image = (Image)source.GetBitmap();
         }
+
+        private void  ButtonSaveImage_Click(object sender, EventArgs e)
+        {
+            Bitmap temp = new Bitmap(pictureBoxNewImage.Image,
+                new Size(pictureBoxNewImage.Width, pictureBoxNewImage.Height));
+            MyImage myImage = new MyImage(temp, true);
+            view.SaveImage(myImage, TxtBoxNewName.Text);
+            
+        }
+        
     }
 }

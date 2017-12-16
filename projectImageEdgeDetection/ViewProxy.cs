@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace projectImageEdgeDetection
 {
@@ -16,14 +17,20 @@ namespace projectImageEdgeDetection
 
         public MyImage LoadImage()
         {
-   
             return ImageController.LoadImage();
+        }
+
+        public Boolean SaveImage(MyImage myImage, String name)
+        {
+            return ImageController.SaveImage(myImage, name);
         }
 
         public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
         {
             return ImageController.SetColorFilter(source,max,min,color);
         }
+
+        
 
     }
 }

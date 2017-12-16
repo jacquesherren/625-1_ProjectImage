@@ -34,6 +34,8 @@
             this.ButtonOtherMethod = new System.Windows.Forms.Button();
             this.ButtonLoadImage = new System.Windows.Forms.Button();
             this.ButtonSaveImage = new System.Windows.Forms.Button();
+            this.TxtBoxNewName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNewImage)).BeginInit();
             this.SuspendLayout();
@@ -95,12 +97,31 @@
             this.ButtonSaveImage.TabIndex = 5;
             this.ButtonSaveImage.Text = "Save Image";
             this.ButtonSaveImage.UseVisualStyleBackColor = true;
+            this.ButtonSaveImage.Click += new System.EventHandler(this.ButtonSaveImage_Click);
+            // 
+            // TxtBoxNewName
+            // 
+            this.TxtBoxNewName.Location = new System.Drawing.Point(1180, 24);
+            this.TxtBoxNewName.Name = "TxtBoxNewName";
+            this.TxtBoxNewName.Size = new System.Drawing.Size(100, 20);
+            this.TxtBoxNewName.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1051, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Name of the new Image:";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 553);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtBoxNewName);
             this.Controls.Add(this.ButtonSaveImage);
             this.Controls.Add(this.ButtonLoadImage);
             this.Controls.Add(this.ButtonOtherMethod);
@@ -112,6 +133,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImageSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNewImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -123,6 +145,8 @@
         private System.Windows.Forms.Button ButtonLaplacian;
         private System.Windows.Forms.Button ButtonLoadImage;
         private System.Windows.Forms.Button ButtonSaveImage;
+        private System.Windows.Forms.TextBox TxtBoxNewName;
+        private System.Windows.Forms.Label label1;
     }
 }
 

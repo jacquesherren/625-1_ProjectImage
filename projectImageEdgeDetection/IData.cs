@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace projectImageEdgeDetection
 {
@@ -10,6 +11,6 @@ namespace projectImageEdgeDetection
     {
         MyImage LoadImageFromDisk();
 
-        Boolean SaveImageToDisk();
+         Boolean SaveImageToDisk(MyImage myImage, String name);
     }
 }

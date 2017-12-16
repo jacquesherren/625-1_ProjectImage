@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace projectImageEdgeDetection
 {
@@ -28,6 +29,12 @@ namespace projectImageEdgeDetection
             res.SetFiltred(true);
 
             return res;
+        }
+
+        public static Boolean SaveImage(MyImage myImage, String name)
+        {
+            IData idata = new DataProxy();
+            return idata.SaveImageToDisk(myImage, name);
         }
 
         public static MyImage SetColorFilter(MyImage source,int max,int min,Color color)
