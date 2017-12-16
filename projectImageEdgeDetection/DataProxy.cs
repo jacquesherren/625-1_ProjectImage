@@ -10,7 +10,7 @@ namespace projectImageEdgeDetection
     public class DataProxy : IData
     {
         private ImageData imageData;
-        public Bitmap LoadImageFromDisk()
+        public MyImage LoadImageFromDisk()
         {
             imageData = new ImageData();
             return imageData.LoadImageFromDisk();

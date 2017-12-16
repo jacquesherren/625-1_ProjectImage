@@ -9,21 +9,23 @@ namespace projectImageEdgeDetection
 {
     class ViewProxy : IView
     {
-        public Bitmap Laplacian3x3Filter(Bitmap source)
+        public MyImage Laplacian3x3Filter(MyImage source)
         {
-            ImageController imageController = new ImageController(this);
-            return imageController.Laplacian3x3(source);
+            //ImageController imageController = new ImageController(this);
+            return ImageController.Laplacian3x3(source);
         }
 
-        public Bitmap LoadImage()
+        public MyImage LoadImage()
         {
-            ImageController imageController = new ImageController(this);
-            return imageController.LoadImage();
+            //ImageController imageController = new ImageController(this);
+            return ImageController.LoadImage();
         }
 
-        public Bitmap otherMethodFilter(Bitmap source)
+        public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
         {
-            throw new NotImplementedException();
+            //ImageController imageController = new ImageController(this);
+            return ImageController.SetColorFilter(source,max,min,color);
         }
+
     }
 }

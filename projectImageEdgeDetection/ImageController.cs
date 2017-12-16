@@ -9,41 +9,67 @@ using System.Threading.Tasks;
 
 namespace projectImageEdgeDetection
 {
-    class ImageController
+   public static class ImageController
     {
-        private readonly IView iView;
-        private  IData iData;
-        private Bitmap bitmapSource;
-        private Bitmap bitmapResult;
+        //private static readonly IView iView;
+        //private static IData iData;
+        //private MyImage source;
+        //private MyImage result;
 
-        public ImageController(IView iView)
-        {
-            this.iView = iView;
-        }
 
-        public Bitmap LoadImage()
+
+        public static MyImage LoadImage()
         {
-            this.iData = new DataProxy();
+            IData iData = new DataProxy();
             return iData.LoadImageFromDisk();
         }
 
-        public Bitmap Laplacian3x3(Bitmap source)
+        public static MyImage Laplacian3x3(MyImage source)
         {
-            this.bitmapSource = source;
-            return Laplacian3x3(); ;
+            //this.source = source;
+            MyImage res = new MyImage(source.GetBitmap(), false);
 
-        }
-
-
-        private Bitmap Laplacian3x3()
-        {
-            Bitmap res;
-
-            res = ConvolutionFilter(bitmapSource, MatrixLaplacian3x3, 1.0, 0, false);
+            res.SetBitmap(ConvolutionFilter(source.GetBitmap(), MatrixLaplacian3x3, 1.0, 0, false));
+            res.SetFiltred(true);
 
             return res;
 
         }
+
+        public static MyImage SetColorFilter(MyImage source,int max,int min,Color color)
+        {
+            //this.source = source;
+            MyImage res = new MyImage(source.GetBitmap(), false);
+
+            res.SetBitmap(SetColorFilter(res.GetBitmap(), max, min, color));
+            res.SetFiltred(true);
+
+            return res;
+        }
+
+        private static Bitmap SetColorFilter(this Bitmap bmp, int max, int min, Color color)
+        {
+            // create temp bitmap
+            Bitmap resultBitmap = new Bitmap(bmp.Width, bmp.Height);
+            for (int i = 0; i < bmp.Width; i++) // browse image row
+            {
+                for (int j = 0; j < bmp.Height; j++) // browse image  column
+                {
+                    Color colorPixel = bmp.GetPixel(i, j); // recover each color pixel
+                    if (colorPixel.G > min && colorPixel.G < max)
+                    { // if not green (between the green gap) change to white else green
+                        Color cLayer = Color.White; // set to white
+                        resultBitmap.SetPixel(i, j, cLayer); // change pixel to white
+                    }
+                    else
+                    {
+                        resultBitmap.SetPixel(i, j, color); //  change to green
+                    }
+                }
+            }
+            return resultBitmap; // return result
+        }
+
 
         public static double[,] MatrixLaplacian3x3
         {

@@ -9,8 +9,8 @@ namespace projectImageEdgeDetection
 {
     public interface IView
     {
-        Bitmap Laplacian3x3Filter(Bitmap source);
-        Bitmap otherMethodFilter(Bitmap source);
-        Bitmap LoadImage();
+        MyImage Laplacian3x3Filter(MyImage source);
+        MyImage SetColorFilter(MyImage source,int max,int min, Color color);
+        MyImage LoadImage();
     }
 }

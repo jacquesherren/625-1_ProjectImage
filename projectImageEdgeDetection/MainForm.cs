@@ -14,32 +14,32 @@ namespace projectImageEdgeDetection
     public partial class MainForm : Form
     {
         private IView view = new ViewProxy();
-        private Bitmap source;
+        private MyImage source;
+        private MyImage result;
 
 
         public MainForm()
         {
             InitializeComponent();
-            source = (Bitmap)pictureBoxImageSource.Image;
         }
 
         private void ButtonLaplacian_Click(object sender, EventArgs e)
         {
-            Bitmap result;
             result = view.Laplacian3x3Filter(source);
-            pictureBoxNewImage.Image = (Image)result;
+            pictureBoxNewImage.Image = (Image)result.GetBitmap();
         }
 
         private void ButtonOtherMethod_Click(object sender, EventArgs e)
         {
-            Bitmap result;
-            result = view.otherMethodFilter(source);
+            Color color = Color.Green;
+            result = view.SetColorFilter(source, 230, 110, color);
+            pictureBoxNewImage.Image = (Image)result.GetBitmap();
         }
 
         private void ButtonLoadImage_Click(object sender, EventArgs e)
         {
             this.source = view.LoadImage();
-            pictureBoxImageSource.Image = (Image)source;
+            pictureBoxImageSource.Image = (Image)source.GetBitmap();
         }
     }
 }

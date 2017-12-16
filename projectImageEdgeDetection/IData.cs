@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +8,7 @@ namespace projectImageEdgeDetection
 {
      public interface IData
     {
-        Bitmap LoadImageFromDisk();
+        MyImage LoadImageFromDisk();
 
         Boolean SaveImageToDisk();
     }

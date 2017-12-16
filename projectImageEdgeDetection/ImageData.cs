@@ -11,19 +11,20 @@ namespace projectImageEdgeDetection
     public class ImageData
     {
         private IData data = new DataProxy();
-        private Bitmap map;
 
 
-        public Bitmap LoadImageFromDisk()
+        public MyImage LoadImageFromDisk()
         {
+            
             OpenFileDialog op = new OpenFileDialog();
             DialogResult dr = op.ShowDialog();
             if (dr == DialogResult.OK)
             {
                 string path = op.FileName;
-                map = new Bitmap(op.FileName);
+                Bitmap map = new Bitmap(op.FileName);
+                MyImage image = new MyImage(map, false);
 
-                return map;
+                return image;
             }
             return null;
         }

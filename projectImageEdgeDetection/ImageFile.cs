@@ -9,8 +9,8 @@ namespace projectImageEdgeDetection
 {
     class ImageFile
     {
-        private Bitmap bitmap { get; set; }
-        private double size { get; set; }
+        private Bitmap bitmap;
+        private double size;
 
         public ImageFile (Bitmap bitmap, double size)
         {
