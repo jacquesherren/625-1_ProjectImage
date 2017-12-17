@@ -11,6 +11,7 @@ namespace projectImageEdgeDetection
     public class DataProxy : IData
     {
         private ImageData imageData;
+
         public MyImage LoadImageFromDisk()
         {
             imageData = new ImageData();

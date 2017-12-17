@@ -1,0 +1,2 @@
+C:\Users\Helder\source\repos\625-1_ProjectImage\ImageEdgeDetectionTest\obj\Debug\ImageEdgeDetectionTest.csprojResolveAssemblyReference.cache
+C:\Users\Helder\source\repos\625-1_ProjectImage\ImageEdgeDetectionTest\obj\Debug\ImageEdgeDetectionTest.csproj.CoreCompileInputs.cache
