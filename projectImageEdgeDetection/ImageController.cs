@@ -17,7 +17,8 @@ namespace projectImageEdgeDetection
         public static MyImage LoadImage()
         {
             IData iData = new DataProxy();
-            return iData.LoadImageFromDisk();
+            MyImage img = new MyImage(iData.LoadImageFromDisk(), false);
+            return img;
         }
 
         public static MyImage Laplacian3x3(MyImage source)
@@ -34,7 +35,7 @@ namespace projectImageEdgeDetection
         public static Boolean SaveImage(MyImage myImage, String name)
         {
             IData idata = new DataProxy();
-            return idata.SaveImageToDisk(myImage, name);
+            return idata.SaveImageToDisk(myImage.GetBitmap(), name);
         }
 
         public static MyImage SetColorFilter(MyImage source,int max,int min,Color color)

@@ -10,10 +10,8 @@ namespace projectImageEdgeDetection
 {
     public class ImageData
     {
-        private IData data = new DataProxy();
-
-
-        public MyImage LoadImageFromDisk()
+    
+        public Bitmap LoadImageFromDisk()
         {
             
             OpenFileDialog op = new OpenFileDialog();
@@ -22,17 +20,17 @@ namespace projectImageEdgeDetection
             {
                 string path = op.FileName;
                 Bitmap map = new Bitmap(op.FileName);
-                MyImage image = new MyImage(map, false);
+                //MyImage image = new MyImage(map, false);
 
-                return image;
+                return map;
             }
             return null;
         }
 
-        public Boolean SaveImageToDisk(MyImage myImage, String name)
+        public Boolean SaveImageToDisk(Bitmap myImage, String name)
         {
             PictureBox picture = new PictureBox();
-            picture.Image = myImage.GetBitmap();
+            picture.Image = myImage;
             picture.SizeMode = PictureBoxSizeMode.AutoSize;
             FolderBrowserDialog fl = new FolderBrowserDialog();
             if (fl.ShowDialog() != DialogResult.Cancel)

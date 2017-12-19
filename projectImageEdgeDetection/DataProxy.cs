@@ -12,13 +12,13 @@ namespace projectImageEdgeDetection
     {
         private ImageData imageData;
 
-        public MyImage LoadImageFromDisk()
+        public Bitmap LoadImageFromDisk()
         {
             imageData = new ImageData();
             return imageData.LoadImageFromDisk();
         }
 
-        public  Boolean SaveImageToDisk(MyImage myImage, String name)
+        public  Boolean SaveImageToDisk(Bitmap myImage, String name)
         {
             imageData = new ImageData();
             return imageData.SaveImageToDisk(myImage, name);
