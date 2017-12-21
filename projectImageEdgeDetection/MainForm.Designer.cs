@@ -45,14 +45,14 @@
             this.pictureBoxImageSource.InitialImage = null;
             this.pictureBoxImageSource.Location = new System.Drawing.Point(12, 61);
             this.pictureBoxImageSource.Name = "pictureBoxImageSource";
-            this.pictureBoxImageSource.Size = new System.Drawing.Size(640, 480);
+            this.pictureBoxImageSource.Size = new System.Drawing.Size(240, 180);
             this.pictureBoxImageSource.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxImageSource.TabIndex = 0;
             this.pictureBoxImageSource.TabStop = false;
             // 
             // pictureBoxNewImage
             // 
-            this.pictureBoxNewImage.Location = new System.Drawing.Point(739, 61);
+            this.pictureBoxNewImage.Location = new System.Drawing.Point(267, 61);
             this.pictureBoxNewImage.Name = "pictureBoxNewImage";
             this.pictureBoxNewImage.Size = new System.Drawing.Size(640, 480);
             this.pictureBoxNewImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,7 +61,7 @@
             // 
             // ButtonLaplacian
             // 
-            this.ButtonLaplacian.Location = new System.Drawing.Point(658, 61);
+            this.ButtonLaplacian.Location = new System.Drawing.Point(348, 12);
             this.ButtonLaplacian.Name = "ButtonLaplacian";
             this.ButtonLaplacian.Size = new System.Drawing.Size(75, 43);
             this.ButtonLaplacian.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // ButtonOtherMethod
             // 
-            this.ButtonOtherMethod.Location = new System.Drawing.Point(658, 110);
+            this.ButtonOtherMethod.Location = new System.Drawing.Point(267, 12);
             this.ButtonOtherMethod.Name = "ButtonOtherMethod";
             this.ButtonOtherMethod.Size = new System.Drawing.Size(75, 43);
             this.ButtonOtherMethod.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             // ButtonSaveImage
             // 
-            this.ButtonSaveImage.Location = new System.Drawing.Point(1304, 12);
+            this.ButtonSaveImage.Location = new System.Drawing.Point(832, 12);
             this.ButtonSaveImage.Name = "ButtonSaveImage";
             this.ButtonSaveImage.Size = new System.Drawing.Size(75, 43);
             this.ButtonSaveImage.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             // TxtBoxNewName
             // 
-            this.TxtBoxNewName.Location = new System.Drawing.Point(1180, 24);
+            this.TxtBoxNewName.Location = new System.Drawing.Point(717, 24);
             this.TxtBoxNewName.Name = "TxtBoxNewName";
             this.TxtBoxNewName.Size = new System.Drawing.Size(100, 20);
             this.TxtBoxNewName.TabIndex = 6;
@@ -109,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1051, 27);
+            this.label1.Location = new System.Drawing.Point(588, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 13);
             this.label1.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 553);
+            this.ClientSize = new System.Drawing.Size(917, 553);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtBoxNewName);
             this.Controls.Add(this.ButtonSaveImage);

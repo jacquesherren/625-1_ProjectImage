@@ -12,8 +12,6 @@ namespace projectImageEdgeDetection
 {
    public static class ImageController
     {
-
-
         public static MyImage LoadImage()
         {
             IData iData = new DataProxy();
