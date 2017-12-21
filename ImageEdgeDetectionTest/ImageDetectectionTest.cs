@@ -21,10 +21,13 @@ namespace ImageEdgeDetectionTest
             Bitmap source = new Bitmap(GetImage("../../Resources/source.png"));
            
             //Give instruction to return the image source
-            ImageComp.LoadImageFromDisk().Returns(source);      
+            ImageComp.LoadImageFromDisk().Returns(source);
+
+            // Run the method
+            Bitmap myBitmap = iData1.LoadImageFromDisk();
             
             //check the return
-            ParsingImage(source, iData1.LoadImageFromDisk());
+            ParsingImage(source, myBitmap);
         }
 
         [TestMethod]
