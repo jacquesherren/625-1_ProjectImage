@@ -12,6 +12,6 @@ namespace projectImageEdgeDetection
     {
         MyImage LoadImageFromDisk();
 
-        Boolean SaveImageToDisk(Bitmap myImage, String name);
+        String SaveImageToDisk(MyImage myImage, String name);
     }
 }

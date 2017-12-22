@@ -26,7 +26,7 @@ namespace projectImageEdgeDetection
             
         }
 
-        public Boolean SaveImageToDisk(Bitmap myImage, String name)
+        public String SaveImageToDisk(MyImage myImage, String name)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace projectImageEdgeDetection
             }
             catch (Exception e)
             {
-                return false;
+                return null;
             }
             
         }

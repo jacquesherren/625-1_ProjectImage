@@ -16,7 +16,7 @@ namespace unitTestProjectImage
 
             var ImageComp = Substitute.For<IData>();
 
-            MyImage expected = CreateMyImage("source");
+            MyImage expected = new MyImage(Properties.Resources.source,"expected");
             ImageComp.LoadImageFromDisk().Returns(expected);
 
             ImageCtrl ic = new ImageCtrl(ImageComp);
@@ -26,14 +26,32 @@ namespace unitTestProjectImage
             ParsingImage(expected, target);
 
         }
+        [TestMethod]
+        public void TestSaveImageToDisk()
+        {
+
+            var ImageComp = Substitute.For<IData>();
+
+            MyImage source = new MyImage(Properties.Resources.source,"source");
+            MyImage expected = new MyImage(Properties.Resources.source, "expected");
+            //ImageComp.SaveImageToDisk(source.Bitmap,"source").Returns<String>("C:\\temp\\SaveTest.png");
+
+            ImageCtrl ic = new ImageCtrl(ImageComp);
+            MyImage target = ic.LoadImage();
+
+
+            ParsingImage(expected, target);
+
+        }
+
 
         [TestMethod]
         public void TestLaplacian3x3()
         {
             var ImageComp = Substitute.For<IView>();
 
-            MyImage expected = CreateMyImage("url\\Ressource\\expecteLAP.png");
-            MyImage source = CreateMyImage("source");
+            MyImage expected = new MyImage(Properties.Resources.Laplacian3x3,"laplacian");
+            MyImage source = new MyImage(Properties.Resources.source,"source");
             ImageComp.Laplacian3x3Filter(source).Returns(expected);
 
             ImageCtrl ic = new ImageCtrl(ImageComp);
@@ -44,7 +62,7 @@ namespace unitTestProjectImage
         }
 
 
-
+        //Plus utile si on utilise les properties.Resources
         private static MyImage CreateMyImage(String url)
         {
             Bitmap bmp = new Bitmap(GetImage(url));

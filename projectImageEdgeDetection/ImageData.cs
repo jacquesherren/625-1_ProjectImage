@@ -31,18 +31,19 @@ namespace projectImageEdgeDetection
             return null;
         }
 
-        public Boolean SaveImageToDisk(Bitmap myImage, String name)
+        public String SaveImageToDisk(MyImage myImage, String name)
         {
             PictureBox picture = new PictureBox();
-            picture.Image = myImage;
+            picture.Image = myImage.Bitmap;
             picture.SizeMode = PictureBoxSizeMode.AutoSize;
             FolderBrowserDialog fl = new FolderBrowserDialog();
             if (fl.ShowDialog() != DialogResult.Cancel)
             {
-                picture.Image.Save(fl.SelectedPath + @"\" + name + @".png", System.Drawing.Imaging.ImageFormat.Png);
-                return true;
+                String path =""+ fl.SelectedPath + @"\" + name + @".png";
+                picture.Image.Save(path, System.Drawing.Imaging.ImageFormat.Png);
+                return path;
             };
-            return false;
+            return null;
         }
         
     }

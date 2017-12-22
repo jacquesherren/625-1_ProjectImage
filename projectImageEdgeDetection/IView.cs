@@ -12,5 +12,6 @@ namespace projectImageEdgeDetection
         MyImage Laplacian3x3Filter(MyImage source);
         MyImage SetColorFilter(MyImage source,int max,int min, Color color);
         MyImage LoadImage();
+        String SaveImage(MyImage myImage, String name);
     }
 }

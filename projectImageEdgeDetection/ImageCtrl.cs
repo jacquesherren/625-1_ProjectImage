@@ -40,6 +40,11 @@ namespace projectImageEdgeDetection
             return iData.LoadImageFromDisk();
         }
 
+        public String SaveImage(MyImage myImage, String name)
+        {
+            return iData.SaveImageToDisk(myImage, name);
+        }
+
         public MyImage Laplacian3x3(MyImage source)
         {
 

@@ -22,6 +22,12 @@ namespace projectImageEdgeDetection
             return ic.LoadImage();
         }
 
+        public String SaveImage(MyImage myImage, String name)
+        {
+            ImageCtrl ic = new ImageCtrl();
+            return ic.SaveImage(myImage, name);
+        }
+
         public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
         {
             ImageCtrl ic = new ImageCtrl(this);
