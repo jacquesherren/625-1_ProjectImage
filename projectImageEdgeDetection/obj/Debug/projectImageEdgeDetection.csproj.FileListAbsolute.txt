@@ -27,3 +27,4 @@ C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\D
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.CoreCompileInputs.cache
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.exe
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.pdb
+C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csprojResolveAssemblyReference.cache

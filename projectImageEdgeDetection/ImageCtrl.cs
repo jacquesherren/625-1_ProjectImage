@@ -51,6 +51,40 @@ namespace projectImageEdgeDetection
             return res;
         }
 
+        public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
+        {
+            MyImage res = new MyImage(source.Bitmap, "SetColorFilter");
+            
+            res.Bitmap = ConvolutionFilter(source.Bitmap, MatrixLaplacian3x3, 1.0, 0, false);
+            res.Bitmap = SetColorFilter(res.Bitmap, max, min, color);
+  
+
+            return res;
+        }
+
+        private  Bitmap SetColorFilter(Bitmap bmp, int max, int min, Color color)
+        {
+            // create temp bitmap
+            Bitmap resultBitmap = new Bitmap(bmp.Width, bmp.Height);
+            for (int i = 0; i < bmp.Width; i++) // browse image row
+            {
+                for (int j = 0; j < bmp.Height; j++) // browse image  column
+                {
+                    Color colorPixel = bmp.GetPixel(i, j); // recover each color pixel
+                    if (colorPixel.G > min && colorPixel.G < max)
+                    { // if not green (between the green gap) change to white else green
+                        Color cLayer = Color.White; // set to white
+                        resultBitmap.SetPixel(i, j, cLayer); // change pixel to white
+                    }
+                    else
+                    {
+                        resultBitmap.SetPixel(i, j, color); //  change to green
+                    }
+                }
+            }
+            return resultBitmap; // return result
+        }
+
         private Bitmap ConvolutionFilter(Bitmap bitmapSource,
                                         double[,] filterMatrix,
                                              double factor = 1,

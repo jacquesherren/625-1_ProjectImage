@@ -33,7 +33,7 @@ namespace projectImageEdgeDetection
         private void ButtonOtherMethod_Click(object sender, EventArgs e)
         {
             Color color = Color.Green;
-          //  result = view.SetColorFilter(source, 230, 110, color);
+            result = view.SetColorFilter(source, 230, 110, color);
             pictureBoxNewImage.Image = (Image)result.Bitmap;
         }
 

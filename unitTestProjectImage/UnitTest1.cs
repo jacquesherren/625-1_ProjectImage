@@ -16,7 +16,7 @@ namespace unitTestProjectImage
 
             var ImageComp = Substitute.For<IData>();
 
-            MyImage expected = CreateMyImage();
+            MyImage expected = CreateMyImage("source");
             ImageComp.LoadImageFromDisk().Returns(expected);
 
             ImageCtrl ic = new ImageCtrl(ImageComp);
@@ -27,11 +27,27 @@ namespace unitTestProjectImage
 
         }
 
-
-
-        private static MyImage CreateMyImage()
+        [TestMethod]
+        public void TestLaplacian3x3()
         {
-            Bitmap bmp = new Bitmap(GetImage("C:\\Users\\Jacques\\Source\\Repos\\625-1_ProjectImage\\projectImageEdgeDetection\\Resources\\source.png"));
+            var ImageComp = Substitute.For<IView>();
+
+            MyImage expected = CreateMyImage("url\\Ressource\\expecteLAP.png");
+            MyImage source = CreateMyImage("source");
+            ImageComp.Laplacian3x3Filter(source).Returns(expected);
+
+            ImageCtrl ic = new ImageCtrl(ImageComp);
+            MyImage target = ic.Laplacian3x3(source);
+
+
+            ParsingImage(expected, target);
+        }
+
+
+
+        private static MyImage CreateMyImage(String url)
+        {
+            Bitmap bmp = new Bitmap(GetImage(url));
             MyImage image = new MyImage(bmp, "test");
 
             return image;

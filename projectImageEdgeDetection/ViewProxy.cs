@@ -22,11 +22,11 @@ namespace projectImageEdgeDetection
             return ic.LoadImage();
         }
 
-       /* public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
+        public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
         {
             ImageCtrl ic = new ImageCtrl(this);
             return ic.SetColorFilter(source,max,min,color);
-        }*/
+        }
 
     }
 }
