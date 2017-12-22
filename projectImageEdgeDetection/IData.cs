@@ -10,8 +10,10 @@ namespace projectImageEdgeDetection
 {
      public interface IData
     {
+        //Function to Load an Image
         MyImage LoadImageFromDisk();
 
+        //Function to Save a Image
         String SaveImageToDisk(MyImage myImage, String name);
     }
 }

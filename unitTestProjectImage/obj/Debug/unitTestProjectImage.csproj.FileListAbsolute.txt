@@ -21,9 +21,6 @@ C:\Users\Jacques\Source\Repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
-C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
-C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\unitTestProjectImage.dll
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\unitTestProjectImage.pdb
 C:\Users\Helder\source\repos\625-1_ProjectImage\unitTestProjectImage\bin\Debug\Castle.Core.dll
