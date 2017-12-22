@@ -9,34 +9,25 @@ namespace projectImageEdgeDetection
 {
     public class MyImage
     {
-        private Bitmap Bitmap { get; set; }
-        private Boolean Filtred { get; set; }
-        public double Size { get => Size; set => Size = value; }
+        private Bitmap _Bitmap;
+        private String _Name;
+        private double _Size;
 
+        public Bitmap Bitmap { get => _Bitmap; set => _Bitmap = value; }
+        public string Name { get => _Name; set => _Name = value; }
+        public double Size { get => _Size; set => _Size = value; }
 
-        public MyImage(Bitmap bitmap, Boolean filtred)
+        public MyImage()
         {
-            this.Bitmap = bitmap;
-            this.Filtred = filtred;
+
+        }
+
+        public MyImage(Bitmap bitmap, String name)
+        {
+            this._Bitmap = bitmap;
+            this._Name = name;
             
         }
 
-        public Bitmap GetBitmap()
-        {
-            return this.Bitmap;
-        }
-        public void SetBitmap(Bitmap bitmap)
-        {
-            this.Bitmap = bitmap;
-        }
-
-        public Boolean IsFiltred()
-        {
-            return this.Filtred;
-        }
-        public void SetFiltred(Boolean filtred)
-        {
-            this.Filtred = filtred;
-        }
     }
 }

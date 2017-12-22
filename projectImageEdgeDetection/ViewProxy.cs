@@ -7,23 +7,26 @@ using System.Threading.Tasks;
 
 namespace projectImageEdgeDetection
 {
-    class ViewProxy : IView
+    public class ViewProxy : IView
     {
         public MyImage Laplacian3x3Filter(MyImage source)
         {
-            return ImageController.Laplacian3x3(source);
+
+            ImageCtrl ic = new ImageCtrl(this);
+            return ic.Laplacian3x3(source);
         }
 
         public MyImage LoadImage()
         {
-   
-            return ImageController.LoadImage();
+            ImageCtrl ic = new ImageCtrl();
+            return ic.LoadImage();
         }
 
-        public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
+       /* public MyImage SetColorFilter(MyImage source, int max, int min, Color color)
         {
-            return ImageController.SetColorFilter(source,max,min,color);
-        }
+            ImageCtrl ic = new ImageCtrl(this);
+            return ic.SetColorFilter(source,max,min,color);
+        }*/
 
     }
 }

@@ -10,24 +10,40 @@ namespace projectImageEdgeDetection
 {
     public class ImageData
     {
-        private IData data = new DataProxy();
-
-
+    
         public MyImage LoadImageFromDisk()
         {
             
+
             OpenFileDialog op = new OpenFileDialog();
-            DialogResult dr = op.ShowDialog();
-            if (dr == DialogResult.OK)
+            op.Title = "Select an image file.";
+            op.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
+            op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
+
+            if (op.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string path = op.FileName;
                 Bitmap map = new Bitmap(op.FileName);
-                MyImage image = new MyImage(map, false);
-
+                MyImage image = new MyImage(map, op.FileName);
                 return image;
             }
+
             return null;
         }
 
+        public Boolean SaveImageToDisk(Bitmap myImage, String name)
+        {
+            PictureBox picture = new PictureBox();
+            picture.Image = myImage;
+            picture.SizeMode = PictureBoxSizeMode.AutoSize;
+            FolderBrowserDialog fl = new FolderBrowserDialog();
+            if (fl.ShowDialog() != DialogResult.Cancel)
+            {
+                picture.Image.Save(fl.SelectedPath + @"\" + name + @".png", System.Drawing.Imaging.ImageFormat.Png);
+                return true;
+            };
+            return false;
+        }
+        
     }
 }

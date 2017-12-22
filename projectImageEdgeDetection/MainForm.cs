@@ -27,20 +27,20 @@ namespace projectImageEdgeDetection
         private void ButtonLaplacian_Click(object sender, EventArgs e)
         {
             result = view.Laplacian3x3Filter(source);
-            pictureBoxNewImage.Image = (Image)result.GetBitmap();
+            pictureBoxNewImage.Image = (Image)result.Bitmap;
         }
 
         private void ButtonOtherMethod_Click(object sender, EventArgs e)
         {
             Color color = Color.Green;
-            result = view.SetColorFilter(source, 230, 110, color);
-            pictureBoxNewImage.Image = (Image)result.GetBitmap();
+          //  result = view.SetColorFilter(source, 230, 110, color);
+            pictureBoxNewImage.Image = (Image)result.Bitmap;
         }
 
         private void ButtonLoadImage_Click(object sender, EventArgs e)
         {
             this.source = view.LoadImage();
-            pictureBoxImageSource.Image = (Image)source.GetBitmap();
+            pictureBoxImageSource.Image = (Image)source.Bitmap;
         }
     }
 }

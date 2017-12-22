@@ -43,14 +43,14 @@
             this.pictureBoxImageSource.InitialImage = null;
             this.pictureBoxImageSource.Location = new System.Drawing.Point(12, 61);
             this.pictureBoxImageSource.Name = "pictureBoxImageSource";
-            this.pictureBoxImageSource.Size = new System.Drawing.Size(640, 480);
+            this.pictureBoxImageSource.Size = new System.Drawing.Size(240, 180);
             this.pictureBoxImageSource.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxImageSource.TabIndex = 0;
             this.pictureBoxImageSource.TabStop = false;
             // 
             // pictureBoxNewImage
             // 
-            this.pictureBoxNewImage.Location = new System.Drawing.Point(739, 61);
+            this.pictureBoxNewImage.Location = new System.Drawing.Point(276, 61);
             this.pictureBoxNewImage.Name = "pictureBoxNewImage";
             this.pictureBoxNewImage.Size = new System.Drawing.Size(640, 480);
             this.pictureBoxNewImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,7 @@
             // 
             // ButtonLaplacian
             // 
-            this.ButtonLaplacian.Location = new System.Drawing.Point(658, 61);
+            this.ButtonLaplacian.Location = new System.Drawing.Point(276, 12);
             this.ButtonLaplacian.Name = "ButtonLaplacian";
             this.ButtonLaplacian.Size = new System.Drawing.Size(75, 43);
             this.ButtonLaplacian.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // ButtonOtherMethod
             // 
-            this.ButtonOtherMethod.Location = new System.Drawing.Point(658, 110);
+            this.ButtonOtherMethod.Location = new System.Drawing.Point(357, 12);
             this.ButtonOtherMethod.Name = "ButtonOtherMethod";
             this.ButtonOtherMethod.Size = new System.Drawing.Size(75, 43);
             this.ButtonOtherMethod.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             // ButtonSaveImage
             // 
-            this.ButtonSaveImage.Location = new System.Drawing.Point(1304, 12);
+            this.ButtonSaveImage.Location = new System.Drawing.Point(841, 12);
             this.ButtonSaveImage.Name = "ButtonSaveImage";
             this.ButtonSaveImage.Size = new System.Drawing.Size(75, 43);
             this.ButtonSaveImage.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 553);
+            this.ClientSize = new System.Drawing.Size(924, 553);
             this.Controls.Add(this.ButtonSaveImage);
             this.Controls.Add(this.ButtonLoadImage);
             this.Controls.Add(this.ButtonOtherMethod);

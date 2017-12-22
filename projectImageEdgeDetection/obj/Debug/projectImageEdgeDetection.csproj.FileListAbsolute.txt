@@ -21,7 +21,6 @@ C:\Users\Helder\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\De
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe.config
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.exe
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\bin\Debug\projectImageEdgeDetection.pdb
-C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csprojResolveAssemblyReference.cache
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.MainForm.resources
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.Properties.Resources.resources
 C:\Users\Jacques\Source\Repos\625-1_ProjectImage\projectImageEdgeDetection\obj\Debug\projectImageEdgeDetection.csproj.GenerateResource.Cache
