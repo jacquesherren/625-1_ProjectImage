@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -29,12 +30,6 @@ namespace projectImageEdgeDetection
             this.iView = iView;
         }
 
-        public ImageCtrl(IData iData, IView iView)
-        {
-            this.iData = iData;
-            this.iView = iView;
-        }
-
         public MyImage LoadImage()
         {
             return iData.LoadImageFromDisk();
@@ -50,7 +45,7 @@ namespace projectImageEdgeDetection
 
             MyImage res = new MyImage(source.Bitmap, "Laplacian3x3");
 
-            res.Bitmap = ConvolutionFilter(source.Bitmap, MatrixLaplacian3x3, 1.0, 0, false);
+            res.Bitmap = ConvolutionFilter(source.Bitmap, MatrixLaplacian3x3, 1.0, 0);
 
 
             return res;
@@ -60,7 +55,6 @@ namespace projectImageEdgeDetection
         {
             MyImage res = new MyImage(source.Bitmap, "SetColorFilter");
             
-            res.Bitmap = ConvolutionFilter(source.Bitmap, MatrixLaplacian3x3, 1.0, 0, false);
             res.Bitmap = SetColorFilter(res.Bitmap, max, min, color);
   
 
@@ -93,8 +87,7 @@ namespace projectImageEdgeDetection
         private Bitmap ConvolutionFilter(Bitmap bitmapSource,
                                         double[,] filterMatrix,
                                              double factor = 1,
-                                                  int bias = 0,
-                                        bool grayscale = false)
+                                                  int bias = 0)
         {
             BitmapData sourceData = bitmapSource.LockBits(new Rectangle(0, 0,
                                      bitmapSource.Width, bitmapSource.Height),
@@ -106,24 +99,6 @@ namespace projectImageEdgeDetection
 
             Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length);
             bitmapSource.UnlockBits(sourceData);
-
-            if (grayscale == true)
-            {
-                float rgb = 0;
-
-                for (int k = 0; k < pixelBuffer.Length; k += 4)
-                {
-                    rgb = pixelBuffer[k] * 0.11f;
-                    rgb += pixelBuffer[k + 1] * 0.59f;
-                    rgb += pixelBuffer[k + 2] * 0.3f;
-
-
-                    pixelBuffer[k] = (byte)rgb;
-                    pixelBuffer[k + 1] = pixelBuffer[k];
-                    pixelBuffer[k + 2] = pixelBuffer[k];
-                    pixelBuffer[k + 3] = 255;
-                }
-            }
 
             double blue = 0.0;
             double green = 0.0;
@@ -215,7 +190,7 @@ namespace projectImageEdgeDetection
             return resultBitmap;
         }
 
-        public double[,] MatrixLaplacian3x3
+        private double[,] MatrixLaplacian3x3
         {
             get
             {
@@ -225,7 +200,5 @@ namespace projectImageEdgeDetection
                   { -1, -1, -1,  }, };
             }
         }
-
-
     }
 }

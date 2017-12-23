@@ -54,8 +54,7 @@
             // 
             this.pictureBoxNewImage.Location = new System.Drawing.Point(276, 61);
             this.pictureBoxNewImage.Name = "pictureBoxNewImage";
-            this.pictureBoxNewImage.Size = new System.Drawing.Size(640, 480);
-            this.pictureBoxNewImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNewImage.Size = new System.Drawing.Size(512, 341);
             this.pictureBoxNewImage.TabIndex = 1;
             this.pictureBoxNewImage.TabStop = false;
             // 
@@ -91,7 +90,7 @@
             // 
             // ButtonSaveImage
             // 
-            this.ButtonSaveImage.Location = new System.Drawing.Point(841, 12);
+            this.ButtonSaveImage.Location = new System.Drawing.Point(713, 408);
             this.ButtonSaveImage.Name = "ButtonSaveImage";
             this.ButtonSaveImage.Size = new System.Drawing.Size(75, 43);
             this.ButtonSaveImage.TabIndex = 5;
@@ -101,7 +100,7 @@
             // 
             // TxtBoxNewName
             // 
-            this.TxtBoxNewName.Location = new System.Drawing.Point(723, 24);
+            this.TxtBoxNewName.Location = new System.Drawing.Point(595, 422);
             this.TxtBoxNewName.Name = "TxtBoxNewName";
             this.TxtBoxNewName.Size = new System.Drawing.Size(112, 20);
             this.TxtBoxNewName.TabIndex = 6;
@@ -109,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(613, 31);
+            this.label1.Location = new System.Drawing.Point(485, 425);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 7;
@@ -119,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 553);
+            this.ClientSize = new System.Drawing.Size(796, 461);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtBoxNewName);
             this.Controls.Add(this.ButtonSaveImage);

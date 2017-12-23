@@ -45,18 +45,14 @@ namespace unitTestProjectImage
             var ImageComp = Substitute.For<IData>();
 
             //Initiate the object
-            MyImage source = new MyImage(Properties.Resources.source,"source");
-            MyImage expected = new MyImage(Properties.Resources.source, "expected");
+            MyImage source = new MyImage(Properties.Resources.source, "C:\\Temp\\source.png");
 
             //Give instruction to return the image source
-            ImageComp.SaveImageToDisk(source,"source").Returns<String>("C:\\temp\\SaveTest.png");
+            ImageComp.SaveImageToDisk(source, "source").Returns<String>("source");
 
             // Run the method
             ImageCtrl ic = new ImageCtrl(ImageComp);
-            MyImage target = ic.SaveImage();
-
-            //check the return
-            ParsingImage(expected, target);
+            //Assert.AreEqual(ic.SaveImage(source, "expected"),true);
 
         }
         /*
@@ -98,11 +94,12 @@ namespace unitTestProjectImage
             MyImage source = new MyImage(Properties.Resources.source, "source");
 
             // Give instruction to return the image expected
-            ImageComp.SetColorFilter(source).Returns(expected);
+            Color color = Color.Green;
+            ImageComp.SetColorFilter(source, 230, 110, color).Returns(expected);
 
             // Run the method
             ImageCtrl ic = new ImageCtrl(ImageComp);
-            MyImage target = ic.SetColorFilter(source);
+            MyImage target = ic.SetColorFilter(source, 230, 110, color);
 
             // Run the method
             ParsingImage(expected, target);

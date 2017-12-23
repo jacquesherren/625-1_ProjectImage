@@ -43,7 +43,7 @@ namespace projectImageEdgeDetection
                 picture.Image.Save(path, System.Drawing.Imaging.ImageFormat.Png);
                 return path;
             };
-            return null;
+            return "";
         }
         
     }

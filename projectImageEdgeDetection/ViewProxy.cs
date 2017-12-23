@@ -9,6 +9,7 @@ namespace projectImageEdgeDetection
 {
     public class ViewProxy : IView
     {
+
         public MyImage Laplacian3x3Filter(MyImage source)
         {
 

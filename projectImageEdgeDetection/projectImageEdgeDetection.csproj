@@ -90,6 +90,7 @@
     <None Include="Resources\source.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\GreenFilter.png" />
     <Content Include="Resources\Laplacian3x3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

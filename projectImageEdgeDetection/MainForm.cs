@@ -21,12 +21,15 @@ namespace projectImageEdgeDetection
         public MainForm()
         {
             InitializeComponent();
-            
+
+            cmbEdgeDetection.SelectedIndex = 0;
+
         }
 
         private void ButtonLaplacian_Click(object sender, EventArgs e)
         {
             result = view.Laplacian3x3Filter(source);
+            TxtBoxNewName.Text = result.Name;
             pictureBoxNewImage.Image = (Image)result.Bitmap;
         }
 
@@ -34,6 +37,7 @@ namespace projectImageEdgeDetection
         {
             Color color = Color.Green;
             result = view.SetColorFilter(source, 230, 110, color);
+            TxtBoxNewName.Text = result.Name;
             pictureBoxNewImage.Image = (Image)result.Bitmap;
         }
 
@@ -45,9 +49,13 @@ namespace projectImageEdgeDetection
 
         private void ButtonSaveImage_Click(object sender, EventArgs e)
         {
-            Bitmap temp = new Bitmap(pictureBoxNewImage.Image, new Size(pictureBoxNewImage.Width, pictureBoxNewImage.Height));
-            MyImage myImage = new MyImage(temp, "saveImage");
-            view.SaveImage(myImage, TxtBoxNewName.Text);
+            if(result!=null)
+                view.SaveImage(result, TxtBoxNewName.Text);
+        }
+
+        private void cmbEdgeDetection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
